@@ -1,0 +1,391 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 1rem 0;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body form .buildInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .buildInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .buildInfo p {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+body form .buildInfo input {
+  font-size: 1.3rem;
+  width: 4rem;
+}
+body form .buildInfo .build {
+  display: flex;
+}
+body form .buildInfo .build .buildName {
+  width: 10rem;
+  margin-right: 3rem;
+}
+body form .buildInfo .buildDate {
+  display: flex;
+}
+body form .buildInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .buildInfo .address {
+  width: 20rem;
+}
+body form .buildInfo .landTitle {
+  width: 15rem;
+}
+body form .buildInfo .buildType {
+  width: 10rem;
+}
+body form .buildInfo .material {
+  width: 6rem;
+}
+body form .buildInfo .floorPlan {
+  width: 20rem;
+}
+body form .facilityInfo,
+body form .publicFacilityInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .facilityInfo h3,
+body form .publicFacilityInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+body form .facilityInfo p,
+body form .facilityInfo input,
+body form .publicFacilityInfo p,
+body form .publicFacilityInfo input {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+body form .facilityInfo .inputBox,
+body form .publicFacilityInfo .inputBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+body form .facilityInfo .inputBox .inputBool,
+body form .publicFacilityInfo .inputBox .inputBool {
+  width: 15vw;
+  display: flex;
+}
+body form .facilityInfo .inputBox .inputBool .isHave,
+body form .publicFacilityInfo .inputBox .inputBool .isHave {
+  width: 4rem;
+}
+body form .facilityInfo .inputBox .inputType,
+body form .publicFacilityInfo .inputBox .inputType {
+  display: flex;
+}
+body form .facilityInfo .inputBox .inputType .type,
+body form .publicFacilityInfo .inputBox .inputType .type {
+  width: 15rem;
+}
+body form .facilityInfo .inputBox .inputRemark,
+body form .publicFacilityInfo .inputBox .inputRemark {
+  display: flex;
+}
+body form .facilityInfo .inputBox .inputRemark .remark,
+body form .publicFacilityInfo .inputBox .inputRemark .remark {
+  width: 15rem;
+}
+body form .facilityInfo .inputBoxNoType,
+body form .publicFacilityInfo .inputBoxNoType {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .facilityInfo .inputBoxNoType .inputBool,
+body form .publicFacilityInfo .inputBoxNoType .inputBool {
+  width: 20vw;
+  display: flex;
+}
+body form .facilityInfo .inputBoxNoType .inputBool .isHave,
+body form .publicFacilityInfo .inputBoxNoType .inputBool .isHave {
+  width: 4rem;
+}
+body form .facilityInfo .inputBoxNoType .inputRemark,
+body form .publicFacilityInfo .inputBoxNoType .inputRemark {
+  display: flex;
+}
+body form .facilityInfo .inputBoxNoType .inputRemark .remark,
+body form .publicFacilityInfo .inputBoxNoType .inputRemark .remark {
+  width: 20rem;
+}
+body form .cpInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .cpInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .cpInfo p {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+body form .cpInfo input {
+  font-size: 1.3rem;
+  width: 10rem;
+}
+body form .cpInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .rentInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .rentInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .rentInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 5rem;
+}
+body form .rentInfo p {
+  font-size: 1.3rem;
+}
+body form .rentInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .rentInfo .rentCost,
+body form .rentInfo .manaCost {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .rentInfo .rentCost .inputBox,
+body form .rentInfo .manaCost .inputBox {
+  display: flex;
+  margin-right: 0.5rem;
+}
+body form .payInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .payInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .payInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 5rem;
+}
+body form .payInfo p {
+  font-size: 1.3rem;
+}
+body form .payInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .payInfo .branchName,
+body form .payInfo .accountNum,
+body form .payInfo .holderName {
+  width: 15rem;
+}
+body form .landHolderInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .landHolderInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .landHolderInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 15rem;
+}
+body form .landHolderInfo p {
+  font-size: 1.3rem;
+}
+body form .landHolderInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .landHolderInfo .address {
+  width: 25rem;
+}
+body form .landHolderInfo .companyId {
+  width: 4rem;
+}
+body form .landHolderInfo .hint {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+body form .tenantInfo,
+body form .getMaxAmountInfo,
+body form .renewalFeeInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body form .tenantInfo h3,
+body form .getMaxAmountInfo h3,
+body form .renewalFeeInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body form .tenantInfo input,
+body form .getMaxAmountInfo input,
+body form .renewalFeeInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 10rem;
+}
+body form .tenantInfo p,
+body form .getMaxAmountInfo p,
+body form .renewalFeeInfo p {
+  font-size: 1.3rem;
+}
+body form .tenantInfo .inputBox,
+body form .getMaxAmountInfo .inputBox,
+body form .renewalFeeInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .tenantInfo .address,
+body form .getMaxAmountInfo .address,
+body form .renewalFeeInfo .address {
+  width: 20rem;
+}
+body form .tenantInfo .companyaddress,
+body form .getMaxAmountInfo .companyaddress,
+body form .renewalFeeInfo .companyaddress {
+  width: 15rem;
+}
+body form .tenantInfo .nameAndAge,
+body form .getMaxAmountInfo .nameAndAge,
+body form .renewalFeeInfo .nameAndAge {
+  display: flex;
+}
+body form .tenantInfo .twoInputBox,
+body form .getMaxAmountInfo .twoInputBox,
+body form .renewalFeeInfo .twoInputBox {
+  display: flex;
+}
+body form .tenantInfo .hint,
+body form .getMaxAmountInfo .hint,
+body form .renewalFeeInfo .hint {
+  margin: 0.5rem 0;
+}
+body form .tenantInfo .month,
+body form .getMaxAmountInfo .month,
+body form .renewalFeeInfo .month {
+  width: 5rem;
+}
+body form .termInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body form .termInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+body form .termInfo .term {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  color: #00337c;
+  width: 45vw;
+  height: 40vh;
+}
+body form .termInfo textarea {
+  font-size: 1.3rem;
+  color: #00337c;
+  min-width: 45vw;
+  max-width: 45vw;
+  min-height: 20vh;
+  max-height: 50vh;
+}
+body form .linkBar {
+  display: flex;
+  width: 35vw;
+  justify-content: space-between;
+}
+body form .linkBar .listLink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: #eef5ff;
+  color: #00337c;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  transition: 0.3s ease;
+}
+body form .linkBar .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #9eb8d9;
+}
+body form .linkBar .listLink .icon {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=editContract.css.map */

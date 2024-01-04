@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>物件を編集</title>
+    <!--     匯入fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" th:href="@{/style/style.css}" />
+    <link rel="stylesheet" th:href="@{/style/editTenant.css}" />
+  </head>
+  <body>
+    <h1>居 住 用 建 物 賃 貸 借 契 約 書</h1>
+
+    <form action="/edit/tenant" method="post">
+      <div class="info">
+        <div class="tenantInfo">
+          <h3>借主および入居人、緊急連絡先</h3>
+
+          <div class="nameAndAge">
+            <div class="inputBox">
+              <p>借主氏名</p>
+              <input
+                th:value="${tenantInfo.getTenantName()}"
+                name="tenantName"
+              />
+            </div>
+
+            <div class="inputBox">
+              <p>年齢</p>
+              <input
+                type="number"
+                min="18"
+                max="80"
+                th:value="${tenantInfo.getTenantAge()}"
+                name="tenantAge"
+              />
+            </div>
+          </div>
+
+          <div class="nameAndAge">
+            <div class="inputBox">
+              <p>入居者名</p>
+              <input
+                th:value="${tenantInfo.getResidentName()}"
+                name="residentName"
+              />
+            </div>
+
+            <div class="inputBox">
+              <p>年齢</p>
+              <input
+                type="number"
+                min="18"
+                max="80"
+                th:value="${tenantInfo.getResidentAge()}"
+                name="residentAge"
+              />
+            </div>
+          </div>
+
+          <h3 class="hint">緊急連絡先</h3>
+
+          <div class="twoInputBox">
+            <div class="inputBox">
+              <p>氏名</p>
+              <input
+                th:value="${tenantInfo.getContactName()}"
+                name="contactName"
+              />
+            </div>
+
+            <div class="inputBox">
+              <p>借主との関係</p>
+              <input
+                th:value="${tenantInfo.getRelationship()}"
+                name="relationship"
+              />
+            </div>
+          </div>
+
+          <div class="twoInputBox">
+            <div class="inputBox">
+              <p>住所</p>
+              <input
+                th:value="${tenantInfo.getContactAddress()}"
+                class="address"
+                name="contactAddress"
+              />
+            </div>
+
+            <div class="inputBox">
+              <p>電話</p>
+              <input
+                th:value="${tenantInfo.getContactPhone()}"
+                name="contactPhone"
+              />
+            </div>
+          </div>
+
+          <div class="twoInputBox">
+            <div class="inputBox">
+              <p>勤務先</p>
+              <input
+                th:value="${tenantInfo.getCompanyAddressNum()}"
+                class="companyaddress"
+                name="companyAddressNum"
+              />
+            </div>
+
+            <div class="inputBox">
+              <p>電話</p>
+              <input
+                th:value="${tenantInfo.getCompanyPhoneNumber()}"
+                name="companyPhoneNumber"
+              />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <p>携帯</p>
+            <input th:value="${tenantInfo.getCellphone()}" name="cellphone" />
+          </div>
+        </div>
+
+        <!-- contract_period -->
+        <div class="cpInfo">
+          <h3>契約期間</h3>
+
+          <div class="inputBox">
+            <p>始期</p>
+            <input
+              type="date"
+              th:value="${tenantInfo.getStartDate()}"
+              name="startDate"
+            />
+            <p>から</p>
+          </div>
+
+          <div class="inputBox">
+            <p>終期</p>
+            <input
+              type="date"
+              th:value="${tenantInfo.getEndDate()}"
+              name="endDate"
+            />
+            <p>まで</p>
+          </div>
+
+          <div class="inputBox">
+            <p>物件引渡日</p>
+            <input
+              type="date"
+              th:value="${tenantInfo.getDeliveryDate()}"
+              name="deliveryDate"
+            />
+          </div>
+        </div>
+
+        <div class="linkBar">
+          <a class="listLink" href="javascript:history.go(-1);">前のページ</a>
+          <span>第4ページ 全4ページ</span>
+
+          <button class="listLink" type="submit">保存する</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

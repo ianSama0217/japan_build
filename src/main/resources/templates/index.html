@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ホーム</title>
+    <link rel="stylesheet" th:href="@{/style/indexStyle.css}" />
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <div class="region link"><a href="/region">地域から検索</a></div>
+        <div class="line link"><a href="/line">路線から検索</a></div>
+      </div>
+
+      <div class="box">
+        <div class="lineBackside link">
+          <a href="/backend">路線の編集と管理</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="build link"><a href="/build/list">物件情報</a></div>
+        <div class="buildBackside link">
+          <a href="/buildBackend/list">物件の編集と管理</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 1rem 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .buildInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        width: 4rem;
+      }
+
+      .build {
+        display: flex;
+
+        .buildName {
+          width: 10rem;
+          margin-right: 3rem;
+        }
+      }
+
+      .buildDate {
+        display: flex;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+
+      .address {
+        width: 20rem;
+      }
+
+      .landTitle {
+        width: 15rem;
+      }
+
+      .buildType {
+        width: 10rem;
+      }
+
+      .material {
+        width: 6rem;
+      }
+
+      .floorPlan {
+        width: 20rem;
+      }
+    }
+
+    .facilityInfo,
+    .publicFacilityInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      padding: 0.5rem;
+      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+        align-self: center;
+      }
+
+      p,
+      input {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+      }
+
+      .inputBox {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+
+        .inputBool {
+          width: 15vw;
+          display: flex;
+          .isHave {
+            width: 4rem;
+          }
+        }
+
+        .inputType {
+          display: flex;
+          .type {
+            width: 15rem;
+          }
+        }
+
+        .inputRemark {
+          display: flex;
+          .remark {
+            width: 15rem;
+          }
+        }
+      }
+
+      .inputBoxNoType {
+        display: flex;
+        margin: 0.5rem 0;
+
+        .inputBool {
+          width: 20vw;
+          display: flex;
+          .isHave {
+            width: 4rem;
+          }
+        }
+
+        .inputRemark {
+          display: flex;
+          .remark {
+            width: 20rem;
+          }
+        }
+      }
+    }
+
+    .cpInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        width: 10rem;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .rentInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+        width: 5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+
+      .rentCost,
+      .manaCost {
+        display: flex;
+        margin: 0.5rem 0;
+        .inputBox {
+          display: flex;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .payInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+        width: 5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+
+      .branchName,
+      .accountNum,
+      .holderName {
+        width: 15rem;
+      }
+    }
+
+    .landHolderInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+        width: 15rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+
+      .address {
+        width: 25rem;
+      }
+
+      .companyId {
+        width: 4rem;
+      }
+
+      .hint {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .tenantInfo,
+    .getMaxAmountInfo,
+    .renewalFeeInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+        width: 10rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .inputBox {
+        display: flex;
+        margin: 0.5rem 0;
+      }
+
+      .address {
+        width: 20rem;
+      }
+
+      .companyaddress {
+        width: 15rem;
+      }
+
+      .nameAndAge {
+        display: flex;
+      }
+
+      .twoInputBox {
+        display: flex;
+      }
+
+      .hint {
+        margin: 0.5rem 0;
+      }
+
+      .month {
+        width: 5rem;
+      }
+    }
+
+    .termInfo {
+      border: 1px solid #9eb8d9;
+      border-radius: 8px;
+      width: 50vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .term {
+        border: 1px solid #00337c;
+        border-radius: 8px;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        color: #00337c;
+        width: 45vw;
+        height: 40vh;
+      }
+
+      textarea {
+        font-size: 1.3rem;
+        color: #00337c;
+        min-width: 45vw;
+        max-width: 45vw;
+        min-height: 20vh;
+        max-height: 50vh;
+      }
+    }
+
+    .linkBar {
+      display: flex;
+      width: 35vw;
+      justify-content: space-between;
+      .listLink {
+        text-decoration: none;
+        font-size: 1.3rem;
+        background-color: #eef5ff;
+        color: #00337c;
+        border: 1px solid #00337c;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        transition: 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #00337c;
+          color: #9eb8d9;
+        }
+
+        .icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

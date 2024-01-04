@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>バックステージ</title>
+<link rel="stylesheet" th:href="@{/style/regionStyle.css}" />
+</head>
+<body style="background-color: lightgrey;">
+	<h1>ルートと市区町村を検索する</h1>
+
+	<div class="box">
+		<div th:each="item : ${pref}" class="pref">
+			<a th:text="${item}" th:href="@{'/' + ${item} + '/data'}"></a>
+		</div>
+	</div>
+
+	<a class="homeLink" href="/">ホーム</a>
+</body>
+</html>

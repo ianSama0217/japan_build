@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>地域から検索</title>
+<link rel="stylesheet" th:href="@{/style/regionStyle.css}" />
+</head>
+
+<body>
+	<h1>地域から検索</h1>
+	<div class="box">
+		<div th:each="item : ${pref}" class="pref">
+			<a id="prefValue" th:text="${item}"
+				th:href="@{'/' + ${item} + '/muni'}"></a>
+		</div>
+
+
+	</div>
+
+	<a href="/" class="homeLink">ホーム</a>
+
+	<img th:src="@{/images/searchRegion.jpg}" alt="background" />
+</body>
+</html>

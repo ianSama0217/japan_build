@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  form {
+    .info {
+      .landHolderInfo,
+      .payInfo {
+        border: 1px solid #00337c;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          align-self: center;
+          margin-bottom: 0.5rem;
+          font-size: 1.4rem;
+        }
+
+        .inputBox {
+          display: flex;
+          margin: 0.5rem 0;
+          input {
+            flex: 3 1 30%;
+            font-size: 1.15rem;
+          }
+          p {
+            flex: 1 1 20%;
+            font-size: 1.15rem;
+          }
+        }
+      }
+
+      .linkBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          font-size: 1rem;
+        }
+        .listLink {
+          margin: 0 2rem;
+          text-decoration: none;
+          background-color: #eef5ff;
+          border: 1px solid #00337c;
+          border-radius: 8px;
+          padding: 0.5rem 1rem;
+          font-size: 1.1rem;
+          transition: 0.3s ease;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #00337c;
+            color: #eef5ff;
+          }
+        }
+      }
+    }
+  }
+}

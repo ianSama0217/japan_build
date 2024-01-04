@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>路線を追加</title>
+    <link rel="stylesheet" th:href="@{/style/createLine.css}" />
+  </head>
+  <body style="background-color: lightgrey">
+    <div class="modal">
+      <div class="modal-content">
+        <form method="post" action="/create">
+          <h2>路線を追加</h2>
+          <label for="prefName">都道府県</label>
+          <input
+            type="text"
+            name="prefName"
+            placeholder="都道府県を入力してください"
+          />
+          <label for="lineName">路線</label>
+          <input
+            type="text"
+            name="lineName"
+            placeholder="路線を入力してください"
+          />
+          <label for="stationName">駅の名前</label>
+          <input
+            type="text"
+            name="stationName"
+            placeholder="駅の名前を入力してください"
+          />
+          <label for="address">住所</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="住所を入力してください"
+          />
+          <div class="btnbox">
+            <button type="button" onclick="turnBack()">キャンセル</button>
+            <button type="button" onclick="createStation()">確認する</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const input = Array.from(document.querySelectorAll("input"));
+
+      const turnBack = () => {
+        window.history.back();
+      };
+
+      const createStation = () => {
+        //必須輸入所有內容 every:所有項目符合條件
+        let isValid = input.every((item) => {
+          if (item.value.trim() == "") {
+            return false; //跳出迴圈
+          }
+          return true;
+        });
+
+        if (!isValid) {
+          alert("すべて入力してください");
+        } else {
+          document.forms[0].submit();
+          alert("正常に追加されました");
+        }
+      };
+    </script>
+  </body>
+</html>

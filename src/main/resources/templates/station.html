@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>路線のデータ</title>
+    <link rel="stylesheet" th:href="@{/style/stationStyle.css}" />
+  </head>
+
+  <body>
+    <div class="title">
+      <span th:text="${pref}"></span> <span>の路線のデータ</span>
+    </div>
+
+    <div class="box">
+      <div th:each="item:${lineData}" class="lineList">
+        <!-- name="selectedLines" 將勾選的checkbox value傳到後端-->
+        <div class="line">
+          <!-- 點擊checkbox傳送資料至JS Arr -->
+          <input
+            type="checkbox"
+            th:attr="lineName=${item}"
+            onclick="pushValue(this)"
+          />
+          <p th:text="${item}"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 提交按钮，將checkbox勾選的選項傳遞到controller -->
+    <button type="button" class="searchLink" onclick="submitForm()">
+      駅を検索
+    </button>
+
+    <div class="linkbox">
+      <a href="/line">前のページ</a>
+      <a href="/">ホーム</a>
+    </div>
+
+    <img th:src="@{/images/searchStation.jpg}" alt="background" />
+
+    <script>
+      let lineArr = [];
+      const pushValue = (checkbox) => {
+        const line = checkbox.getAttribute("lineName");
+        // 判斷 checkbox 是否被勾選
+        if (checkbox.checked) {
+          lineArr.push(line);
+        } else {
+          const index = lineArr.indexOf(line);
+          // 如果被取消的元素存在，從陣列中刪除
+          if (index !== -1) {
+            lineArr.splice(index, 1);
+          }
+        }
+        // console.log(lineArr);
+      };
+
+      const submitForm = () => {
+        lineArr = lineArr.join(";");
+        // console.log(lineArr);
+
+        //陣列為空
+        if (lineArr.length == 0) {
+          alert("少なくとも 1 つの項目をチェックする必要があります");
+          //lineArr init
+          lineArr = [];
+          return;
+        }
+        // 構建 URL (encodeURIComponent:將字符串轉換為符合 URI)
+        const url = `/station/info?line=${encodeURIComponent(lineArr)}`;
+
+        // 重定向到帶有參數的 URL
+        window.location.href = url;
+      };
+    </script>
+  </body>
+</html>

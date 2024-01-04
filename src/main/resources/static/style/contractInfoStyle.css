@@ -1,0 +1,384 @@
+input {
+  pointer-events: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 1rem 0;
+}
+body .buildInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .buildInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .buildInfo p {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+body .buildInfo input {
+  font-size: 1.3rem;
+  width: 4rem;
+}
+body .buildInfo .build {
+  display: flex;
+}
+body .buildInfo .build .buildName {
+  width: 10rem;
+  margin-right: 3rem;
+}
+body .buildInfo .buildDate {
+  display: flex;
+}
+body .buildInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .buildInfo .address {
+  width: 20rem;
+}
+body .buildInfo .landTitle {
+  width: 15rem;
+}
+body .buildInfo .buildType {
+  width: 10rem;
+}
+body .buildInfo .material {
+  width: 6rem;
+}
+body .buildInfo .floorPlan {
+  width: 20rem;
+}
+body .facilityInfo,
+body .publicFacilityInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .facilityInfo h3,
+body .publicFacilityInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+body .facilityInfo p,
+body .facilityInfo input,
+body .publicFacilityInfo p,
+body .publicFacilityInfo input {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+body .facilityInfo .inputBox,
+body .publicFacilityInfo .inputBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+body .facilityInfo .inputBox .inputBool,
+body .publicFacilityInfo .inputBox .inputBool {
+  width: 15vw;
+  display: flex;
+}
+body .facilityInfo .inputBox .inputBool .isHave,
+body .publicFacilityInfo .inputBox .inputBool .isHave {
+  width: 4rem;
+}
+body .facilityInfo .inputBox .inputType,
+body .publicFacilityInfo .inputBox .inputType {
+  display: flex;
+}
+body .facilityInfo .inputBox .inputType .type,
+body .publicFacilityInfo .inputBox .inputType .type {
+  width: 15rem;
+}
+body .facilityInfo .inputBox .inputRemark,
+body .publicFacilityInfo .inputBox .inputRemark {
+  display: flex;
+}
+body .facilityInfo .inputBox .inputRemark .remark,
+body .publicFacilityInfo .inputBox .inputRemark .remark {
+  width: 15rem;
+}
+body .facilityInfo .inputBoxNoType,
+body .publicFacilityInfo .inputBoxNoType {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .facilityInfo .inputBoxNoType .inputBool,
+body .publicFacilityInfo .inputBoxNoType .inputBool {
+  width: 20vw;
+  display: flex;
+}
+body .facilityInfo .inputBoxNoType .inputBool .isHave,
+body .publicFacilityInfo .inputBoxNoType .inputBool .isHave {
+  width: 4rem;
+}
+body .facilityInfo .inputBoxNoType .inputRemark,
+body .publicFacilityInfo .inputBoxNoType .inputRemark {
+  display: flex;
+}
+body .facilityInfo .inputBoxNoType .inputRemark .remark,
+body .publicFacilityInfo .inputBoxNoType .inputRemark .remark {
+  width: 20rem;
+}
+body .cpInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .cpInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .cpInfo p {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+body .cpInfo input {
+  font-size: 1.3rem;
+  width: 10rem;
+}
+body .cpInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .rentInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .rentInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .rentInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 5rem;
+}
+body .rentInfo p {
+  font-size: 1.3rem;
+}
+body .rentInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .rentInfo .rentCost,
+body .rentInfo .manaCost {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .rentInfo .rentCost .inputBox,
+body .rentInfo .manaCost .inputBox {
+  display: flex;
+  margin-right: 0.5rem;
+}
+body .payInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .payInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .payInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 5rem;
+}
+body .payInfo p {
+  font-size: 1.3rem;
+}
+body .payInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .payInfo .branchName,
+body .payInfo .accountNum,
+body .payInfo .holderName {
+  width: 15rem;
+}
+body .landHolderInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .landHolderInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .landHolderInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 15rem;
+}
+body .landHolderInfo p {
+  font-size: 1.3rem;
+}
+body .landHolderInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .landHolderInfo .address {
+  width: 25rem;
+}
+body .landHolderInfo .companyId {
+  width: 4rem;
+}
+body .landHolderInfo .hint {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+body .tenantInfo,
+body .getMaxAmountInfo,
+body .renewalFeeInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body .tenantInfo h3,
+body .getMaxAmountInfo h3,
+body .renewalFeeInfo h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+body .tenantInfo input,
+body .getMaxAmountInfo input,
+body .renewalFeeInfo input {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  width: 10rem;
+}
+body .tenantInfo p,
+body .getMaxAmountInfo p,
+body .renewalFeeInfo p {
+  font-size: 1.3rem;
+}
+body .tenantInfo .inputBox,
+body .getMaxAmountInfo .inputBox,
+body .renewalFeeInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body .tenantInfo .address,
+body .getMaxAmountInfo .address,
+body .renewalFeeInfo .address {
+  width: 20rem;
+}
+body .tenantInfo .companyaddress,
+body .getMaxAmountInfo .companyaddress,
+body .renewalFeeInfo .companyaddress {
+  width: 15rem;
+}
+body .tenantInfo .nameAndAge,
+body .getMaxAmountInfo .nameAndAge,
+body .renewalFeeInfo .nameAndAge {
+  display: flex;
+}
+body .tenantInfo .twoInputBox,
+body .getMaxAmountInfo .twoInputBox,
+body .renewalFeeInfo .twoInputBox {
+  display: flex;
+}
+body .tenantInfo .hint,
+body .getMaxAmountInfo .hint,
+body .renewalFeeInfo .hint {
+  margin: 0.5rem 0;
+}
+body .tenantInfo .month,
+body .getMaxAmountInfo .month,
+body .renewalFeeInfo .month {
+  width: 5rem;
+}
+body .termInfo {
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body .termInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+body .termInfo .term {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  color: #00337c;
+  width: 45vw;
+  height: 40vh;
+}
+body .termInfo textarea {
+  font-size: 1.3rem;
+  color: #00337c;
+  min-width: 45vw;
+  max-width: 45vw;
+  min-height: 20vh;
+  max-height: 50vh;
+}
+body .listLink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #00337c;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  transition: 0.3s ease;
+}
+body .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #9eb8d9;
+}
+body .listLink .icon {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=contractInfoStyle.css.map */

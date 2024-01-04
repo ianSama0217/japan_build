@@ -1,0 +1,162 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 1rem 0;
+}
+body form .info .buildInfo,
+body form .info .stationInfo {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body form .info .buildInfo h3,
+body form .info .stationInfo h3 {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+body form .info .buildInfo textarea,
+body form .info .stationInfo textarea {
+  align-self: center;
+  min-height: 30vh;
+  max-height: 30vh;
+  min-width: 40vw;
+  max-width: 40vw;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .inputBox,
+body form .info .stationInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .inputBox input,
+body form .info .stationInfo .inputBox input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .inputBox p,
+body form .info .stationInfo .inputBox p {
+  flex: 1 1 20%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .build,
+body form .info .stationInfo .build {
+  display: flex;
+  justify-content: space-between;
+}
+body form .info .buildInfo .build .inputBox,
+body form .info .stationInfo .build .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .build .inputBox input,
+body form .info .stationInfo .build .inputBox input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .build .inputBox p,
+body form .info .stationInfo .build .inputBox p {
+  flex: 1 1 20%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .buildDate,
+body form .info .stationInfo .buildDate {
+  display: flex;
+}
+body form .info .buildInfo .buildDate .inputBox,
+body form .info .stationInfo .buildDate .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .buildDate .inputBox .text,
+body form .info .stationInfo .buildDate .inputBox .text {
+  width: 10rem;
+}
+body form .info .buildInfo .buildDate .inputBox input,
+body form .info .stationInfo .buildDate .inputBox input {
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .buildDate .inputBox p,
+body form .info .stationInfo .buildDate .inputBox p {
+  font-size: 1.15rem;
+}
+body form .info .publicFacilityInfo {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body form .info .publicFacilityInfo h3 {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+body form .info .publicFacilityInfo .inputBoxNoType {
+  display: flex;
+}
+body form .info .publicFacilityInfo .inputBoxNoType .inputBool,
+body form .info .publicFacilityInfo .inputBoxNoType .inputRemark {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .publicFacilityInfo .inputBoxNoType .inputBool input,
+body form .info .publicFacilityInfo .inputBoxNoType .inputRemark input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .publicFacilityInfo .inputBoxNoType .inputBool p,
+body form .info .publicFacilityInfo .inputBoxNoType .inputRemark p {
+  flex: 2 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .publicFacilityInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .publicFacilityInfo .inputBox .inputBool {
+  display: flex;
+}
+body form .info .publicFacilityInfo .inputBox .inputBool input {
+  font-size: 1.15rem;
+}
+body form .info .publicFacilityInfo .inputBox .inputBool .text {
+  margin-right: 2rem;
+  font-size: 1.15rem;
+}
+body form .info .publicFacilityInfo .inputBox .inputType {
+  display: flex;
+}
+body form .info .publicFacilityInfo .inputBox .inputRemark {
+  display: flex;
+}
+body form .info .linkBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body form .info .linkBar span {
+  font-size: 1rem;
+}
+body form .info .linkBar .listLink {
+  margin: 0 2rem;
+  text-decoration: none;
+  background-color: #eef5ff;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+body form .info .linkBar .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #eef5ff;
+}/*# sourceMappingURL=editBuild.css.map */

@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 99vh;
+}
+
+.background .linkBox {
+	display: flex;
+	width: 50vw;
+	justify-content: space-between;
+}
+
+.background .linkBox .link {
+	text-decoration: none;
+	color: black;
+	margin: 0 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 8px;
+	padding: 0.2rem;
+	font-size: 2.5rem;
+	transition: 0.3s ease;
+	box-shadow: 0px 10px 6px -6px #232323;
+	margin: 0 0.5rem;
+	margin: 0 0.5rem;
+}
+
+.background .linkBox .link:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+.background .backendLink {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+}
+
+.background .backendLink .icon {
+	transform: scale(1.8);
+}
+
+.background .backgroundImg {
+	position: fixed;
+	top: -30%;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	opacity: 0.5;
+	z-index: -10;
+}

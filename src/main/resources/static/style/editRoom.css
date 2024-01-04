@@ -1,0 +1,207 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 1rem 0;
+}
+body form .info .buildInfo,
+body form .info .rentInfo,
+body form .info .renewalFeeInfo,
+body form .info .getMaxAmountInfo,
+body form .info .termInfo {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body form .info .buildInfo h3,
+body form .info .rentInfo h3,
+body form .info .renewalFeeInfo h3,
+body form .info .getMaxAmountInfo h3,
+body form .info .termInfo h3 {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+body form .info .buildInfo textarea,
+body form .info .rentInfo textarea,
+body form .info .renewalFeeInfo textarea,
+body form .info .getMaxAmountInfo textarea,
+body form .info .termInfo textarea {
+  align-self: center;
+  min-height: 30vh;
+  max-height: 30vh;
+  min-width: 40vw;
+  max-width: 40vw;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .inputBox,
+body form .info .rentInfo .inputBox,
+body form .info .renewalFeeInfo .inputBox,
+body form .info .getMaxAmountInfo .inputBox,
+body form .info .termInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .inputBox input,
+body form .info .rentInfo .inputBox input,
+body form .info .renewalFeeInfo .inputBox input,
+body form .info .getMaxAmountInfo .inputBox input,
+body form .info .termInfo .inputBox input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .inputBox p,
+body form .info .rentInfo .inputBox p,
+body form .info .renewalFeeInfo .inputBox p,
+body form .info .getMaxAmountInfo .inputBox p,
+body form .info .termInfo .inputBox p {
+  flex: 1 1 20%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .build,
+body form .info .rentInfo .build,
+body form .info .renewalFeeInfo .build,
+body form .info .getMaxAmountInfo .build,
+body form .info .termInfo .build {
+  display: flex;
+  justify-content: space-between;
+}
+body form .info .buildInfo .build .inputBox,
+body form .info .rentInfo .build .inputBox,
+body form .info .renewalFeeInfo .build .inputBox,
+body form .info .getMaxAmountInfo .build .inputBox,
+body form .info .termInfo .build .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .build .inputBox input,
+body form .info .rentInfo .build .inputBox input,
+body form .info .renewalFeeInfo .build .inputBox input,
+body form .info .getMaxAmountInfo .build .inputBox input,
+body form .info .termInfo .build .inputBox input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .build .inputBox p,
+body form .info .rentInfo .build .inputBox p,
+body form .info .renewalFeeInfo .build .inputBox p,
+body form .info .getMaxAmountInfo .build .inputBox p,
+body form .info .termInfo .build .inputBox p {
+  flex: 1 1 20%;
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .buildDate,
+body form .info .rentInfo .buildDate,
+body form .info .renewalFeeInfo .buildDate,
+body form .info .getMaxAmountInfo .buildDate,
+body form .info .termInfo .buildDate {
+  display: flex;
+}
+body form .info .buildInfo .buildDate .inputBox,
+body form .info .rentInfo .buildDate .inputBox,
+body form .info .renewalFeeInfo .buildDate .inputBox,
+body form .info .getMaxAmountInfo .buildDate .inputBox,
+body form .info .termInfo .buildDate .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .buildInfo .buildDate .inputBox .text,
+body form .info .rentInfo .buildDate .inputBox .text,
+body form .info .renewalFeeInfo .buildDate .inputBox .text,
+body form .info .getMaxAmountInfo .buildDate .inputBox .text,
+body form .info .termInfo .buildDate .inputBox .text {
+  width: 10rem;
+}
+body form .info .buildInfo .buildDate .inputBox input,
+body form .info .rentInfo .buildDate .inputBox input,
+body form .info .renewalFeeInfo .buildDate .inputBox input,
+body form .info .getMaxAmountInfo .buildDate .inputBox input,
+body form .info .termInfo .buildDate .inputBox input {
+  font-size: 1.15rem;
+}
+body form .info .buildInfo .buildDate .inputBox p,
+body form .info .rentInfo .buildDate .inputBox p,
+body form .info .renewalFeeInfo .buildDate .inputBox p,
+body form .info .getMaxAmountInfo .buildDate .inputBox p,
+body form .info .termInfo .buildDate .inputBox p {
+  font-size: 1.15rem;
+}
+body form .info .facilityInfo {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body form .info .facilityInfo h3 {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+body form .info .facilityInfo .inputBoxNoType {
+  display: flex;
+}
+body form .info .facilityInfo .inputBoxNoType .inputBool,
+body form .info .facilityInfo .inputBoxNoType .inputRemark {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .facilityInfo .inputBoxNoType .inputBool input,
+body form .info .facilityInfo .inputBoxNoType .inputRemark input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .facilityInfo .inputBoxNoType .inputBool p,
+body form .info .facilityInfo .inputBoxNoType .inputRemark p {
+  flex: 2 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .facilityInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .facilityInfo .inputBox .inputBool {
+  display: flex;
+}
+body form .info .facilityInfo .inputBox .inputBool input {
+  font-size: 1.15rem;
+}
+body form .info .facilityInfo .inputBox .inputBool .text {
+  margin-right: 2rem;
+  font-size: 1.15rem;
+}
+body form .info .facilityInfo .inputBox .inputType {
+  display: flex;
+}
+body form .info .facilityInfo .inputBox .inputRemark {
+  display: flex;
+}
+body form .info .linkBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body form .info .linkBar span {
+  font-size: 1rem;
+}
+body form .info .linkBar .listLink {
+  margin: 0 2rem;
+  text-decoration: none;
+  background-color: #eef5ff;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+body form .info .linkBar .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #eef5ff;
+}/*# sourceMappingURL=editRoom.css.map */

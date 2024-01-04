@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>路線から検索</title>
+    <link rel="stylesheet" th:href="@{/style/regionStyle.css}" />
+  </head>
+
+  <body>
+    <h1>路線から検索</h1>
+
+    <div class="box">
+      <div th:each="item : ${pref}" class="pref">
+        <a
+          id="prefValue"
+          th:text="${item}"
+          th:href="@{'/' + ${item} + '/line'}"
+        ></a>
+      </div>
+    </div>
+
+    <a class="homeLink" href="/">ホーム</a>
+    
+    <img th:src="@{/images/searchLine.jpg}" alt="background"/>
+  </body>
+</html>

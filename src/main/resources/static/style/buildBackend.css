@@ -1,0 +1,159 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 5vh 0 1rem 0;
+}
+body .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+}
+body .box .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .box .list .build {
+  display: flex;
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 0.2rem 0.5rem;
+  margin-top: 1rem;
+}
+body .box .list .build .link {
+  text-decoration: none;
+  flex: 3 1 20%;
+  font-size: 1.4rem;
+}
+body .box .list .build .address {
+  flex: 6 1 30%;
+  font-size: 1.2rem;
+}
+body .box .list .build .iconBar {
+  flex: 1 1 15%;
+  display: flex;
+  justify-content: space-between;
+}
+body .box .list .build .iconBar a {
+  text-decoration: none;
+}
+body .box .list .build .iconBar a .edit {
+  font-size: 1.5rem;
+}
+body .box .list .build .iconBar a:hover {
+  cursor: pointer;
+}
+body .box .list .build .iconBar button {
+  border: none;
+  background-color: #eef5ff;
+}
+body .box .list .build .iconBar button .delete,
+body .box .list .build .iconBar button .edit {
+  font-size: 1.5rem;
+}
+body .box .list .build .iconBar button:hover {
+  cursor: pointer;
+}
+body .box .list .roomList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9eb8d9;
+  border-radius: 8px;
+  width: 45vw;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.5rem;
+}
+body .box .list .roomList .room {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+body .box .list .roomList .room p {
+  flex: 2 1 30%;
+  font-size: 1.3rem;
+}
+body .box .list .roomList .room .iconBar {
+  flex: 1 1 20%;
+  display: flex;
+  justify-content: space-between;
+}
+body .box .list .roomList .room .iconBar .edit {
+  text-decoration: none;
+  color: #a25772;
+  border: 1px solid #a25772;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+  transition: 0.3s ease;
+}
+body .box .list .roomList .room .iconBar .edit:hover {
+  cursor: pointer;
+  background-color: #a25772;
+  color: #eef5ff;
+}
+body .box .list .roomList .room .iconBar button {
+  border: none;
+  background-color: #eef5ff;
+  color: #00337c;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+}
+body .box .list .roomList .room .iconBar button:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #eef5ff;
+}
+body .box .list .roomList .add {
+  align-self: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00337c;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 0;
+  transition: 0.3s ease;
+}
+body .box .list .roomList .add:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #9eb8d9;
+}
+body .box .list .roomList .add .addIcon {
+  margin-right: 0.2rem;
+}
+body .linkBar {
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+body .linkBar .homeLink,
+body .linkBar .createLink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #00337c;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  transition: 0.3s ease;
+}
+body .linkBar .homeLink:hover,
+body .linkBar .createLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #9eb8d9;
+}
+body .linkBar .homeLink .icon,
+body .linkBar .createLink .icon {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=buildBackend.css.map */

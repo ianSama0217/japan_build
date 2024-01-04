@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin: 1rem 0;
+}
+body form .info .landHolderInfo,
+body form .info .payInfo {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body form .info .landHolderInfo h3,
+body form .info .payInfo h3 {
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+body form .info .landHolderInfo .inputBox,
+body form .info .payInfo .inputBox {
+  display: flex;
+  margin: 0.5rem 0;
+}
+body form .info .landHolderInfo .inputBox input,
+body form .info .payInfo .inputBox input {
+  flex: 3 1 30%;
+  font-size: 1.15rem;
+}
+body form .info .landHolderInfo .inputBox p,
+body form .info .payInfo .inputBox p {
+  flex: 1 1 20%;
+  font-size: 1.15rem;
+}
+body form .info .linkBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body form .info .linkBar span {
+  font-size: 1rem;
+}
+body form .info .linkBar .listLink {
+  margin: 0 2rem;
+  text-decoration: none;
+  background-color: #eef5ff;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+body form .info .linkBar .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #eef5ff;
+}/*# sourceMappingURL=editLandlord.css.map */

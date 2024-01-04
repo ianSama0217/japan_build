@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>データ</title>
+<link rel="stylesheet" th:href="@{/style/backendData.css}" />
+</head>
+<body style="background-color: lightgrey">
+	<!-- 市町村資料 -->
+	<div class="title">
+		<span th:text="${pref}"></span> <span>の市町村データ</span>
+	</div>
+
+	<div class="box">
+		<div th:each="muni:${muniData}" class="muni">
+			<a th:text="${muni}"
+				th:href="@{'/' + ${pref} +'/' + ${muni} + '/data'}"></a>
+		</div>
+	</div>
+	<!-- 市町村資料 -->
+
+	<!-- 電車路線資料 -->
+	<div class="title">
+		<!-- 	muni為空值->顯示pref，反之顯示muni -->
+		<span th:if="${muni} == null" th:text="${pref}"></span> <span
+			th:if="${muni} != null" th:text="${muni}"></span> <span>の路線のデータ</span>
+	</div>
+
+	<div class="box">
+		<h1 th:if="${lineData.size()} == 0" th:text="このエリアには路線がありません"></h1>
+		<div th:each="line:${lineData}" class="line">
+			<p th:text="${line}"></p>
+		</div>
+	</div>
+	<!-- 電車路線資料 -->
+
+	<a href="/create/line">路線を追加</a>
+	<div class="linkbox">
+		<a href="/backend">前のページ</a> <a href="/">ホーム</a>
+	</div>
+
+</body>
+</html>

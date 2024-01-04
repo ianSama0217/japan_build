@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body .title {
+	margin-top: 1rem;
+}
+
+body .title span {
+	font-size: 1.8rem;
+}
+
+body .box {
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 0.5rem;
+	margin: 1rem 0;
+	display: flex;
+	width: 80vw;
+	height: 50vh;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow-y: scroll;
+}
+
+body .box .muni {
+	margin: 0.5rem 0rem;
+}
+
+body .box .muni a {
+	text-decoration: none;
+	color: black;
+	margin: 0.5rem 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 8px;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	transition: 0.3s ease;
+	box-shadow: 0px 10px 6px -6px #232323;
+}
+
+body .box .muni a:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+body .box .line {
+	margin: 0.5rem 0rem;
+}
+
+body .box .line p {
+	margin: 0 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 8px;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	transition: 0.3s ease;
+	box-shadow: 0px 10px 6px -6px #232323;
+}
+
+body a {
+	text-decoration: none;
+	color: black;
+	margin: 0 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 8px;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	transition: 0.3s ease;
+	box-shadow: 0px 10px 6px -6px #232323;
+}
+
+body a:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+body .linkbox {
+	margin: 1rem 0;
+}
+
+body .linkbox a {
+	text-decoration: none;
+	color: black;
+	margin: 0 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 8px;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	transition: 0.3s ease;
+	box-shadow: 0px 10px 6px -6px #232323;
+	padding: 0.2rem;
+}
+
+body .linkbox a:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}

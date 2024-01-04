@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>物件を追加</title>
+    <!--     匯入fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" th:href="@{/style/style.css}" />
+    <link rel="stylesheet" th:href="@{/style/editRoom.css}" />
+  </head>
+  <body>
+    <h1>居 住 用 建 物 賃 貸 借 契 約 書</h1>
+
+    <h1>賃貸借の目的物</h1>
+    <form action="/room/save" method="post">
+      <div class="info">
+        <div class="buildInfo">
+          <h3>賃貸借の目的物</h3>
+          <div class="build">
+            <input type="text" name="floor" />
+            <p>階</p>
+            <input type="text" name="roomNum" />
+            <p>号室</p>
+          </div>
+
+          <!-- <div class="inputBox">
+          <p>登記簿</p>
+          <input class="landTitle" type="text" name="landTitle" />
+        </div> -->
+
+          <div class="inputBox">
+            <p>間取り</p>
+            <input class="floorPlan" type="text" name="floorPlan" />
+          </div>
+
+          <div class="inputBox">
+            <p>床面積</p>
+            <input type="text" name="floorSpace" />
+            <p>m²</p>
+          </div>
+
+          <div class="inputBox">
+            <p>左記以外に</p>
+            <input type="text" name="balconySpace" />
+            <p>m²</p>
+          </div>
+        </div>
+
+        <div class="rentInfo">
+          <h3>賃料等</h3>
+
+          <div class="rentCost">
+            <div class="inputBox">
+              <p>賃料 月額</p>
+              <input name="rentCost" />
+              <p>円</p>
+            </div>
+
+            <div class="inputBox">
+              <p>翌月分を 毎月</p>
+              <input name="rentDeadline" />
+              <p>日までに支払う</p>
+            </div>
+          </div>
+
+          <!-- managementCost -->
+          <div class="manaCost">
+            <div class="inputBox">
+              <p>共益費 月額</p>
+              <input name="managementFee" />
+              <p>円</p>
+            </div>
+
+            <div class="inputBox">
+              <p>翌月分を 毎月</p>
+              <input name="manaDeadline" />
+              <p>日までに支払う</p>
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <p>敷金（保証金） 賃料の</p>
+            <input name="deposit" />
+            <p>ヶ月</p>
+          </div>
+
+          <div class="inputBox">
+            <p>駐車場使用料</p>
+            <input name="parkingCost" />
+            <p>円</p>
+          </div>
+
+          <div class="inputBox">
+            <p>附属施設使用料</p>
+            <input name="facilityFee" />
+            <p>円</p>
+          </div>
+
+          <div class="inputBox">
+            <p>礼金</p>
+            <input name="keyMoney" />
+            <p>円</p>
+          </div>
+
+          <div class="inputBox">
+            <p>貸与する鍵と本数</p>
+            <input name="keyCount" />
+            <p>本</p>
+          </div>
+        </div>
+
+        <div class="facilityInfo">
+          <h3>住戸部分の設備等</h3>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>電気</p>
+              <input type="text" class="isHave" name="electricity" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="electricityType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="electricityRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>ガス</p>
+              <input type="text" class="isHave" name="gas" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="gasType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="gasRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>コンロ</p>
+              <input type="text" class="isHave" name="stove" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="stoveType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="stoveRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>上水道</p>
+              <input type="text" class="isHave" name="waterSupply" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="waterSupplyType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="waterSupplyRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>下水道</p>
+              <input type="text" class="isHave" name="sewer" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="sewerType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="sewerRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>台所</p>
+              <input type="text" class="isHave" name="kitchen" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="kitchenType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="kitchenRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>トイレ</p>
+              <input type="text" class="isHave" name="toilet" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="toiletType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="toiletRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>浴室</p>
+              <input type="text" class="isHave" name="bathroom" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="bathroomType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="bathroomRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>洗面台</p>
+              <input type="text" class="isHave" name="washBasin" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="washBasinType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="washBasinRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>洗濯機置場</p>
+              <input type="text" class="isHave" name="washMachine" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="washMachineType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="washMachineRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>給湯設備</p>
+              <input type="text" class="isHave" name="hotWater" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="hotWaterType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="hotWaterRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>エアコン</p>
+              <input type="text" class="isHave" name="airCon" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="airConType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="airConRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>照明器具</p>
+              <input type="text" class="isHave" name="light" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="lightRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>備付家具</p>
+              <input type="text" class="isHave" name="furniture" />
+            </div>
+
+            <div class="inputType">
+              <p>型式・内容等</p>
+              <input type="text" class="type" name="furnitureType" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="furnitureRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>地デジ対応</p>
+              <input type="text" class="isHave" name="digital" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="digitalRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>CATV対応</p>
+              <input type="text" class="isHave" name="catv" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="catvRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>インターネット</p>
+              <input type="text" class="isHave" name="net" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="netRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>トランクルーム</p>
+              <input type="text" class="isHave" name="trunkroom" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="trunkroomRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>専用庭</p>
+              <input type="text" class="isHave" name="garden" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="gardenRemark" />
+            </div>
+          </div>
+
+          <div class="inputBoxNoType">
+            <div class="inputBool">
+              <p>ルーフバルコニー</p>
+              <input type="text" class="isHave" name="roofBalcony" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="roofBalconyRemark" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="inputBool">
+              <p>鍵</p>
+              <input type="text" class="isHave" name="roomKey" />
+            </div>
+
+            <div class="inputRemark">
+              <p>備考</p>
+              <input type="text" class="remark" name="roomKeyRemark" />
+            </div>
+          </div>
+        </div>
+
+        <div class="renewalFeeInfo">
+          <h3>更新料に関する事項</h3>
+
+          <div class="inputBox">
+            <p>更新料の有無</p>
+            <input name="renewal" />
+          </div>
+
+          <div class="twoInputBox">
+            <div class="inputBox">
+              <p>新賃料の</p>
+              <input name="renewalFeeMonth" class="month" />
+              <p>ヶ月分</p>
+            </div>
+
+            <div class="inputBox">
+              <input name="renewalFee" />
+              <p>円</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="getMaxAmountInfo">
+          <h3>連帯保証の極度額</h3>
+
+          <div class="inputBox">
+            <p>極度額</p>
+            <input name="maxAmount" />
+            <p>円</p>
+          </div>
+        </div>
+
+        <div class="termInfo">
+          <h3>特約条項</h3>
+          <textarea name="term" class="term"></textarea>
+        </div>
+        <div class="linkBar">
+          <a class="listLink" href="javascript:history.go(-1);"
+            ><i class="fa-solid fa-list icon"></i>リストに戻る</a
+          >
+          <button class="listLink" type="submit">セーブデータ</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

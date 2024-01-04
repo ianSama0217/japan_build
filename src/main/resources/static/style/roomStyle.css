@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  margin-top: 1rem;
+}
+body .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+body .box .list {
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  width: 60vw;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  min-height: 30vh;
+  display: flex;
+}
+body .box .list .houseImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .box .list .houseImg .icon {
+  font-size: 8rem;
+}
+body .box .list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* 可根据需要调整表格与其他元素的间距 */
+}
+body .box .list table thead {
+  border-bottom: 1px solid #ddd;
+}
+body .box .list table tr,
+body .box .list table td {
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+body .box .list table td:nth-child(1) {
+  width: 5vw;
+}
+body .box .list table td:nth-child(2),
+body .box .list table td:nth-child(3),
+body .box .list table td:nth-child(4) {
+  width: 10vw;
+}
+body .box .list table td:nth-child(5) {
+  width: 7vw;
+}
+body .box .list table .roomlink {
+  text-decoration: none;
+  color: #a25772;
+  border: 1px solid #a25772;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  transition: 0.3s ease;
+}
+body .box .list table .roomlink:hover {
+  cursor: pointer;
+  background-color: #a25772;
+  color: #eef5ff;
+}
+body .linkBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body .linkBar span {
+  font-size: 1rem;
+}
+body .linkBar .listLink {
+  margin: 0 2rem;
+  text-decoration: none;
+  background-color: #eef5ff;
+  border: 1px solid #00337c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+body .linkBar .listLink:hover {
+  cursor: pointer;
+  background-color: #00337c;
+  color: #eef5ff;
+}/*# sourceMappingURL=roomStyle.css.map */

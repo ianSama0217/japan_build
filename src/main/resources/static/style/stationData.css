@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .title span {
+  font-size: 2rem;
+}
+
+body .box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  display: flex;
+  width: 80vw;
+  height: 50vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+
+body .box .station p {
+  margin: 0.5rem 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 6px -6px #232323;
+}
+
+body .linkBox {
+  display: flex;
+}
+
+body .linkBox a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 6px -6px #232323;
+}
+
+body .linkBox a:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+body img {
+  position: fixed;
+  top: -30%;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -10;
+}

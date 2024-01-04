@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>市町村のデータ</title>
+    <link rel="stylesheet" th:href="@{/style/stationData.css}" />
+  </head>
+
+  <body>
+    <div class="title">
+      <span>駅のデータ</span>
+    </div>
+
+    <div class="box">
+      <div th:each="item:${stationName}" class="station">
+        <p th:text="${item}"></p>
+      </div>
+    </div>
+
+    <div class="linkBox">
+      <a href="/line">路線から検索</a> <a href="/">ホーム</a>
+    </div>
+
+    <img th:src="@{/images/stationData.jpg}" alt="background" />
+  </body>
+</html>
