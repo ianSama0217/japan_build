@@ -228,36 +228,7 @@ public class BuildServiceImpl implements BuildService {
 
 	@Override
 	public BuildRes getContractInfo(int id) {
-		// 檢查id是否存在
-		if (!buildDao.existsById(id)) {
-			return new BuildRes(RtnMsg.BUILD_ID_NOT_FOUND);
-		}
-
-		Optional<Build> op = buildDao.findById(id);
-		if (op.isEmpty()) {
-			return new BuildRes(RtnMsg.BUILD_IS_EMPTY);
-		}
-
-		Build build = op.get();
-
-		// 找出對應build_id的room資訊
-		Room room = roomDao.findByBuildId(id);
-		if (room == null) {
-			return new BuildRes(RtnMsg.ROOM_IS_EMPTY);
-		}
-
-		// 找出對應的room_id的房東、租客資訊
-		Landlord landlord = landlordDao.findByRoomId(room.getRoomId());
-		if (landlord == null) {
-			return new BuildRes(RtnMsg.LANDLORD_IS_EMPTY);
-		}
-
-		Tenant tenant = tenantDao.findByRoomId(room.getRoomId());
-		if (tenant == null) {
-			return new BuildRes(RtnMsg.TENANT_IS_EMPTY);
-		}
-
-		return new BuildRes(RtnMsg.SUCCESSFUL, build, room, landlord, tenant);
+		// TODO Auto-generated method stub
+		return null;
 	}
-
 }

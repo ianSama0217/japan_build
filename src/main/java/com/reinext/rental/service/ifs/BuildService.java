@@ -39,8 +39,7 @@ public interface BuildService {
 	public BuildRes save(Tenant tenant);
 
 	/**
-	 * TODO 還要刪除車站資料
-	 * 刪除Build、room資料(參數:build_id) #刪除
+	 * 刪除Build、room、station資料(參數:build_id) #刪除
 	 **/
 	public BuildRes deleteBuild(int id);
 	

@@ -16,17 +16,7 @@ public interface RoomDao extends JpaRepository<Room, Integer> {
 	public void deleteAllByBuildId(int id);
 	
 	/**
-	 * 刪除對應build_id的room資料(單筆)
-	 **/
-	public void deleteByBuildId(int id);
-	
-	/**
 	 * 找出對應build_id的room資料(複數)
 	 **/
 	public List<Room> findAllByBuildId(int id);
-
-	/**
-	 * 找出對應build_id的room資料(單筆)
-	 **/
-	public Room findByBuildId(int id);
 }
