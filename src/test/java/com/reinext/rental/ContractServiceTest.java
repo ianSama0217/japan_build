@@ -48,14 +48,6 @@ public class ContractServiceTest {
 	}
 
 	@Test
-	public void getRoomInfo() {
-		Room room = roomDao.findByBuildId(103);
-		System.out.println(room.getBuildId());
-		System.out.println(room.getRoomId());
-		System.out.println(room.getFloorPlan());
-	}
-
-	@Test
 	public void getAllRoomInfo() {
 
 	}
