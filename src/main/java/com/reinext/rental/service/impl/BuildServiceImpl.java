@@ -198,6 +198,10 @@ public class BuildServiceImpl implements BuildService {
 
 	@Override
 	public BuildRes getRoomInfo(int id) {
+		if(!roomDao.existsById(id)) {
+			return new BuildRes(RtnMsg.Room_ID_NOT_FOUND);
+		}
+		
 		Optional<Room> op = roomDao.findById(id);
 		if (op.isEmpty()) {
 			return new BuildRes(RtnMsg.ROOM_IS_EMPTY);

@@ -1,5 +1,7 @@
 package com.reinext.rental;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -66,6 +68,21 @@ public class ContractServiceTest {
 		System.out.println(tenant.getTenantId());
 		System.out.println(tenant.getRoomId());
 		System.out.println(tenant.getTenantName());
+	}
+
+	@Test
+	public void getRoomInfoTest() {
+		List<Room> roomList = roomDao.getRoomByBuildId(140);
+		for (Room room : roomList) {
+			System.out.println("room id:" + room.getRoomId());
+		}
+	}
+	
+	@Test
+	public void getRoomTest() {
+		Room room = roomDao.getRoomInfo(59);
+			System.out.println("room id:" + room.getRoomId());
+			System.out.println("備考:" + room.getTerm());
 	}
 
 }
